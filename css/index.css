@@ -1,0 +1,212 @@
+.hero-container {
+  height: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://assets-blog.fundera.com/assets/wp-content/uploads/2019/11/18193502/shutterstock_1146984500.jpg");
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.hero-container img {
+  width: 100%;
+  height: 500px;
+}
+
+.hero-text {
+  height: 50%;
+  width: 40%;
+  float: right;
+}
+
+/* Media queries */
+
+@media (max-width: 884px) {
+  .hero-container {
+    padding-top: 80px;
+  }
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+  .main-section {
+    flex-direction: column;
+  }
+}
+
+.form-container {
+  max-width: 400px;
+  width: 100%;
+}
+
+.form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: var(--gray-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    width: 100%;
+  }
+}
+
+.card-title {
+  margin-top: 60px;
+}
+.card-title h2 span {
+  color: var(--primary-color);
+}
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  width: 1000px;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+.card {
+  width: 28.3%;
+  height: auto;
+  padding: 10px;
+  /* border: 1px solid var(--primary-color); */
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.card i {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: var(--primary-color);
+}
+.card__title {
+  color: var(--gray-color);
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.card__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.08rem;
+  font-weight: 300;
+  line-height: 1.5;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #818181;
+}
+
+.card:hover {
+  border: 4px dashed var(--primary-color);
+}
+
+.about-container {
+  display: flex;
+  max-width: 1180px;
+  margin: auto;
+  flex-direction: row;
+  margin-top: 70px;
+  gap: 40px;
+}
+
+.left img {
+  width: 320px;
+}
+
+.left .circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: #adcce9;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -7px;
+  z-index: -1;
+}
+
+.right {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+.right p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.08rem;
+  font-weight: 300;
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+
+.right ul {
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.08rem;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+
+.right ul li {
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+.icon {
+  color: var(--primary-color);
+  font-size: 1.08rem;
+  padding-right: 10px;
+}
+
+@media (max-width: 800px) {
+  .main-section {
+    flex-direction: column;
+  }
+  .card {
+    margin-top: 10px;
+  }
+  .card-title {
+    margin-top: 80px;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+}
